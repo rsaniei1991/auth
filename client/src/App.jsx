@@ -11,6 +11,8 @@ import RequiredAuth from "./components/RequiredAuth.jsx";
 import axios from "axios";
 
 function App() {
+  console.log("in the app");
+
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("token"));
 
   async function login(credentials) {
